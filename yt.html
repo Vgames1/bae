@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Creation Videos</title>
+    <style>
+        body {
+            background-image: url('mybg.png'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            overflow-y: scroll; /* Enable scrolling */
+            height: 100vh; /* Full viewport height */
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        img.logo {
+            max-width: 150px; /* Logo size */
+        }
+        .time {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; /* Space between videos */
+        }
+        h2 {
+            margin: 10px 0;
+            font-size: 20px;
+            text-align: center;
+        }
+        iframe {
+            border: none; /* Remove iframe border */
+            width: 100%; /* Full width for responsiveness */
+            max-width: 560px; /* Max width for larger screens */
+            height: 315px; /* Fixed height */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="mylog.png" alt="Logo" class="logo">
+        <h1>Learn How to Make a Website</h1>
+    </header>
+
+    <div class="time" id="clock"></div> <!-- Clock display -->
+
+    <section class="video-container">
+        <h2>Video 1: Creating Your First Website</h2>
+        <iframe src="https://www.youtube-nocookie.com/embed/salY_Sm6mv4?si=JsVOVL48h8YgBBaI&amp;controls=0" allowfullscreen></iframe>
+
+        <h2>Video 2: Advanced Web Development Techniques</h2>
+        <iframe src="https://www.youtube-nocookie.com/embed/FQdaUv95mR8?si=UfHwoNDlX4PcR6n8&amp;controls=0" allowfullscreen></iframe>
+
+        <h2>Video 3: Responsive Web Design Basics</h2>
+        <iframe src="https://www.youtube-nocookie.com/embed/FQdaUv95mR8?si=UfHwoNDlX4PcR6n8&amp;controls=0" allowfullscreen></iframe>
+
+        <h2>Video 4: Building Websites with HTML & CSS</h2>
+        <iframe src="https://www.youtube-nocookie.com/embed/o5g-lUuFgpg?si=BsjpQ-xYVRYFRC3T&amp;controls=0" allowfullscreen></iframe>
+
+        <h2>Video 5: JavaScript Fundamentals for Beginners</h2>
+        <iframe src="https://www.youtube-nocookie.com/embed/BT4WzyT2g8k?si=0TGj5lsYMsxK1G0G&amp;controls=0" allowfullscreen></iframe>
+
+        <h2>Video 6: Understanding Web Hosting</h2>
+        <iframe src="https://www.youtube-nocookie.com/embed/QyFcl_Fba-k?si=HwYHakdWEL2PxgIi&amp;controls=0" allowfullscreen></iframe>
+
+        <h2>Video 7: Introduction to Frontend Frameworks</h2>
+        <iframe src="https://www.youtube-nocookie.com/embed/e5AwNU3Y2es?si=8lsnnZScB6oaTzKQ&amp;controls=0" allowfullscreen></iframe>
+
+        <h2>Video 8: Backend Development Explained</h2>
+        <iframe src="https://www.youtube-nocookie.com/embed/OltY8JIaP-4?si=0u3t5h1lkehtt_90&amp;controls=0" allowfullscreen></iframe>
+
+        <h2>Video 9: Essential Tools for Web Development</h2>
+        <iframe src="https://www.youtube-nocookie.com/embed/DHGhFJZLKMs?si=SSHpjhediDg5cTqC&amp;controls=0" allowfullscreen></iframe>
+
+        <h2>Video 10: Common Mistakes to Avoid in Web Development</h2>
+        <iframe src="https://www.youtube-nocookie.com/embed/1HUS1OvpX80?si=X04Ady46IWRMfRcU&amp;controls=0" allowfullscreen></iframe>
+    </section>
+
+    <script>
+        // Function to update the clock
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateClock, 1000); // Update clock every second
+        updateClock(); // Initial call to set clock immediately
+    </script>
+
+</body>
+</html>
