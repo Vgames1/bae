@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url('HTML VS CSS JAVASCRIPTS.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+section {
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.85);
+    margin: 20px;
+    border-radius: 8px;
+}
+
+button {
+    display: inline-block;
+    padding: 1em;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
